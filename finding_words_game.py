@@ -5,13 +5,13 @@ num_words = 10
 
 # accessing the word repository 
 words = []
-with open("10k_word_repository.txt") as word_repo:
+with open("100k_word_repository.txt") as word_repo:
     words = word_repo.read().split()
 
 # getting a list of letters to choose from
 alphabet = [letter for letter in "qwertyuiopasdfghjklzxcvbnm"]
 vowel_count = 0
-while vowel_count  < 2:
+while vowel_count < 2 or vowel_count > 3:
     letters = []
     vowel_count = 0
     for x in range(0,num_letters):
